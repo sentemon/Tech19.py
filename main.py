@@ -1,4 +1,4 @@
-a, b = int(input('wpisz pierwwsza liczbe')), int(input('wpisz druga liczbe'))
+a, b = int(input('wpisz pierwwsza liczbe')), int(input('wpisz druga liczbe')) #kalkulator
 x = input(3
           'wpisz operqacje: +, -, *, /')
 def kalkulator(a, b):
