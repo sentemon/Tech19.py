@@ -1,7 +1,6 @@
-a, b = int(input('wpisz pierwwsza liczbe')), int(input('wpisz druga liczbe')) #kalkulator
-x = input(3
-          'wpisz operqacje: +, -, *, /')
-def kalkulator(a, b):
+a, b = int(input('Wpisz pierwszą liczbę')), int(input('Wpisz drugą liczbę')) #kalkulator
+x = input('Wybierz operacje: (+, -, *, /)')
+def calculator(a, b):
   if x == '+':
     print(f'{a} + {b} = {a + b}')
   elif x == '-':
@@ -10,4 +9,4 @@ def kalkulator(a, b):
     print(f'{a} * {b} = {a * b}')
   elif x == '/':
     print(f'{a} / {b} = {a / b}')
-kalkulator(a, b)
+calculator(a, b)
