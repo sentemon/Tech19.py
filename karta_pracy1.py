@@ -7,3 +7,6 @@
             #zadanie 3
 #a, b = int(input()), int(input())
 #print(f"({a} - {b})^3 = {(a - b)**3}")
+            #zadanie 4
+a, b, c = int(input()), int(input()), int(input())
+print(f"{a} * {b} * {c} = {a*b*c}")
