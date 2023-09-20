@@ -13,3 +13,6 @@
             #zadanie 5
 #a, b = int(input()), int(input())
 #print(f"({a} + {b}) * 0.4 = {(a + b) * 0.4}")
+            #zadanie 6
+#brutto = int(input())
+#print(f"{brutto} / 1.23 = {brutto / 1.23}")
