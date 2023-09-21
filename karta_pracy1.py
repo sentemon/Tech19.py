@@ -22,7 +22,7 @@ def zadanie7(a, b):
 
 # Prośba o podanie liczby od 1 do 7
 try:
-    numer = int(input("Podaj liczbę od 1 do 7: "))
+    numer = int(input("Podaj nr zadania od 1 do 7: "))
     if 1 <= numer <= 7:
         # Wywołanie odpowiedniej funkcji na podstawie wybranej liczby
         if numer == 1:
