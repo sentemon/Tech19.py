@@ -32,7 +32,7 @@ def zadanie3(k, l, m):
 # Zadanie 4
 def zadanie4(a, b, c, d):
     najmniejsza = min(a, b, c, d)
-    return najmniejsza
+    return "Najmniejsza liczba: ", najmniejsza
 
 # Zadanie 5
 def zadanie5(a, b, c):
