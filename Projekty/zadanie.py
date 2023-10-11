@@ -1,3 +1,4 @@
+from math import pi
 def oblicz_pole_i_obwod(figura):
     if figura == "trójkąt":
         a = float(input("Podaj długość boku a: "))
@@ -11,8 +12,8 @@ def oblicz_pole_i_obwod(figura):
         obwod = 4 * a
     elif figura == "kolo":
         r = float(input("Podaj promień koła: "))
-        pole = 3.14 * r**2
-        obwod = 2 * 3.14 * r
+        pole = pi * r**2
+        obwod = 2 * pi * r
     elif figura == "prostokąt":
         a = float(input("Podaj długość boku a: "))
         b = float(input("Podaj długość boku b: "))
