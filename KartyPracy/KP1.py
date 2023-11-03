@@ -1,107 +1,61 @@
-# Karta pracy nr 3b
-import calendar
-from math import sqrt as pierwiastek
+# Karta pracy nr 1
 
-# Zadanie 1
-def zadanie1():
-    rok = 2022
-    miesiac = 11
-    kalendarz = calendar.month(rok, miesiac)
-    print(kalendarz)
+# zadanie 1
+def zadanie1(a, b):
+    print(f"{a**2} + {b**2} = {a**2 + b**2}")
+# zadanie 2
+def zadanie2(a, b):
+    print(f"({a} + {b})^2 = {(a + b)**2}")
+# zadanie 3
+def zadanie3(a, b):
+    print(f"({a} - {b})^3 = {(a - b)**3}")
+# zadanie 4
+def zadanie4(a, b, c):
+    print(f"{a} * {b} * {c} = {a * b * c}")
+# zadanie 5
+def zadanie5(a, b):
+    print(f"({a} + {b}) * 0.4 = {(a + b) * 0.4}")
+# zadanie 6
+def zadanie6(brutto):
+    print(f"{brutto} / 1.23 = {brutto / 1.23}")
+# zadanie 7
+def zadanie7(a, b):
+    print(f"{a} % {b} = {a % b}")
 
-# Zadanie 2
-def zadanie2():
-    for i in range(1, 10, 2):
-        print(i ** 2)
-
-# Zadanie 3
-def zadanie3():
-    for i in range(1000, 10000):
-        if i % 379 == 0:
-            print(i)
-
-# Zadanie 4
-def zadanie4():
-    for i in range(100, 1000):
-        if i % 5 == 0 or i % 6 == 0 or i % 11 == 0:
-            print(i)
-
-# Zadanie 5
-def zadanie5():
-    n = int(input("Podaj liczbę n: "))
-    suma = 0
-    for i in range(n):
-        num = int(input(f"Podaj liczbę: "))
-        suma += num
-    print(f"Suma: {suma}")
-
-# Zadanie 6
-def zadanie6():
-    k = int(input("Podaj liczbę k: "))
-    suma = 0
-    for i in range(2, 2 * k + 1, 2):
-        suma += i
-    print(f"Suma: {suma}")
-
-# Zadanie 7
-def zadanie7():
-    m = int(input("Podaj liczbę m: "))
-    suma = 0
-    for i in range(11, 2 * m + 11, 2):
-        suma += i
-    print(f"Suma: {suma}")
-
-# Zadanie 8
-def zadanie8():
-    W0 = float(input("Podaj kwotę wejściową W0: "))
-    L = float(input("Podaj okres inwestycji w latach L: "))
-    n = int(2 * L)  # Zakładamy kapitalizację co pół roku
-    roczna_stopa_procentowa = 6.0
-    miesieczna_stopa_procentowa = roczna_stopa_procentowa / 12 / 100
-
-    for _ in range(n):
-        W0 += W0 * miesieczna_stopa_procentowa
-
-    print(f"Wartość inwestycji po {L} latach wynosi: {W0:.2f}")
-
-# Zadanie 9
-def zadanie9():
-    n = int(input("Podaj liczbę n: "))
-    suma = 0
-    for i in range(1, n + 1):
-        suma += 21 * i
-    print(f"Suma: {suma}")
-
-# Zadanie 10
-def zadanie10():
-    for i in range(1, 1001):
-        if i % 10 == pierwiastek(i) or i % 100 == pierwiastek(i):
-            print(i)
-
-# Wybór zadania
+# Prośba o podanie liczby od 1 do 7
 try:
-    numer_zadania = int(input("Wybierz numer zadania (od 1 do 10): "))
-    if numer_zadania == 1:
-        zadanie1()
-    elif numer_zadania == 2:
-        zadanie2()
-    elif numer_zadania == 3:
-        zadanie3()
-    elif numer_zadania == 4:
-        zadanie4()
-    elif numer_zadania == 5:
-        zadanie5()
-    elif numer_zadania == 6:
-        zadanie6()
-    elif numer_zadania == 7:
-        zadanie7()
-    elif numer_zadania == 8:
-        zadanie8()
-    elif numer_zadania == 9:
-        zadanie9()
-    elif numer_zadania == 10:
-        zadanie10()
+    numer = int(input("Podaj liczbę od 1 do 7: "))
+    if 1 <= numer <= 7:
+        # Wywołanie odpowiedniej funkcji na podstawie wybranej liczby
+        if numer == 1:
+            a = float(input("Podaj pierwszą liczbę a: "))
+            b = float(input("Podaj drugą liczbę b: "))
+            zadanie1(a, b)
+        elif numer == 2:
+            a = float(input("Podaj pierwszą liczbę a: "))
+            b = float(input("Podaj drugą liczbę b: "))
+            zadanie2(a, b)
+        elif numer == 3:
+            a = float(input("Podaj pierwszą liczbę a: "))
+            b = float(input("Podaj drugą liczbę b: "))
+            zadanie3(a, b)
+        elif numer == 4:
+            a = float(input("Podaj pierwszą liczbę a: "))
+            b = float(input("Podaj drugą liczbę b: "))
+            c = float(input("Podaj trzecią liczbę c: "))
+            zadanie4(a, b, c)
+        elif numer == 5:
+            a = float(input("Podaj pierwszą liczbę a: "))
+            b = float(input("Podaj drugą liczbę b: "))
+            zadanie5(a, b)
+        elif numer == 6:
+            brutto = float(input("Podaj wartość brutto: "))
+            zadanie6(brutto)
+        elif numer == 7:
+            a = float(input("Podaj pierwszą liczbę a: "))
+            b = float(input("Podaj drugą liczbę b: "))
+            zadanie7(a, b)
     else:
-        print("Nieprawidłowy numer zadania. Wybierz liczbę od 1 do 10.")
+        print("Podana liczba nie mieści się w zakresie od 1 do 7.")
 except ValueError:
-    print("Podana wartość nie jest liczbą.")
+    print("To nie jest liczba od 1 do 7.")
