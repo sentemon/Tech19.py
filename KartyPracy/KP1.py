@@ -1,3 +1,5 @@
+# Karta Pracy nr 1
+
 # zadanie 1
 def zadanie1(a, b):
     print(f"{a**2} + {b**2} = {a**2 + b**2}") 
