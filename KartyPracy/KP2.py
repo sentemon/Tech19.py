@@ -9,7 +9,7 @@ def zadanie1(a):
 
 # Zadanie 2
 def zadanie2(a):
-    if len(str(a)) == 3 and a % 17 == 0:
+    if len(len(str(a))) == 3 and a % 17 == 0:
         return "TAK"
     else:
         return "NIE"
