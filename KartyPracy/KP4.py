@@ -67,6 +67,9 @@ try:
         elif numer == 2:
             n = int(input("Podaj liczbę: "))
             print(zadanie2(n))
+        elif numer == 3:
+            n = int(input("Podaj liczbę: "))
+            print(zadanie3(n))
     else:
         print("Podana liczba nie mieści się w zakresie od 1 do 7.")
 
